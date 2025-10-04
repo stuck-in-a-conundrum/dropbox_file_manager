@@ -16,7 +16,7 @@ This project consists of two main components:
 
 ### Steps to Run
 
-Navigate to the frontend directory:
+In the project directory:
 
    ```bash
    cd file-dropbox-ui
@@ -31,8 +31,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser
 
 ### Prerequisites
 
-- Node.js (v18 or later)
-- npm (Node Package Manager)
 - maven
 - Java 17 (openjdk-17)
 
@@ -41,10 +39,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser
 In the project directory, you can run:
 
 ```bash
-    cd backend
-    mvn clean install
-    mvn clean package
-    java -jar target/myproject-0.0.1-SNAPSHOT.jar
+cd backend
+mvn clean install
+mvn clean package
+java -jar target/myproject-0.0.1-SNAPSHOT.jar
 ```
 
 Runs the app in the development mode.\
@@ -53,20 +51,20 @@ Open [http://localhost:8080](http://localhost:8080) to view it in your browser
 ## Running the application using Docker
 
 From project directory, run:
+
 For React App
 
-### `cd file-dropbox-ui`
-
-### `docker build -t file-dropbox-ui .`
-
-### `docker run -p 3000:3000 file-dropbox-ui`
+```bash
+cd file-dropbox-ui
+docker build -t file-dropbox-ui .
+docker run -p 3000:3000 file-dropbox-ui
+```
 
 For SpringBoot App
 
-### `cd backend`
-
-### `mvn clean package`
-
-### `docker build -t backend .`
-
-### `docker run -p 8080:8080 backend`
+```bash
+cd backend
+mvn clean package
+docker build -t backend .
+docker run -p 8080:8080 backend
+```
