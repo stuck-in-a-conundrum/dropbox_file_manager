@@ -57,7 +57,7 @@ For React App
 ```bash
 cd file-dropbox-ui
 docker build -t file-dropbox-ui .
-docker run -p 3000:3000 file-dropbox-ui
+docker run -p 3000:80 file-dropbox-ui
 ```
 
 For SpringBoot App
